@@ -1,0 +1,36 @@
+<div class="header">
+  <div class="logo">logo</div>
+  <div class="navigation">
+    <div><a href="#section1">Lissabon</a></div>
+    <div>Picture 1</div>
+    <div>Picture 2</div>
+    <div>Picture 3</div>
+    <div>Video</div>
+  </div>
+</div>
+
+<div #sections>
+  <section id="section1">
+    <div class="text">
+      <div class="picture-title">
+        <h2>Picture title</h2>
+      </div>
+      <div class="picture-text">
+        lorem ipsum dolor sit amet
+      </div>
+    </div>
+    <div class="picture">
+      <input type="range" min="0" max="100" value="50" [(ngModel)]="sliderValue" (input)="updateImage()">
+      <img src="../../assets/horse_before.jpeg" alt="Before" class="before" id="beforeImg" height="50px" width="50px">
+      <img src="../../assets/horse_after.png" alt="After" class="after" id="afterImg" height="50px" width="50px"xml:base="">
+    </div>
+  </section>
+
+  <section id="section2">
+    <h2>Section 2</h2>
+  </section>
+
+  <section id="section3">
+    <h2>Section 3</h2>
+  </section>
+</div>
