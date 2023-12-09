@@ -1,0 +1,33 @@
+.section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+  height: 400px;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+
+  .text {
+    width: 50%;
+    text-align: center;
+
+    .picture-title {
+
+    }
+
+    .picture-text {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+
+  .pictureContainer {
+    width: 50%;
+    text-align: center;
+
+    .picture {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}

@@ -34,14 +34,4 @@ export class HeaderComponent {
       });
     }
   }
-
-  sliderValue = 50;
-
-  updateImage() {
-    const beforeImg = document.getElementById('beforeImg') as HTMLImageElement;
-    const afterImg = document.getElementById('afterImg') as HTMLImageElement;
-
-    beforeImg.style.clip = `rect(0, ${this.sliderValue}%, 100%, 0)`;
-    afterImg.style.clip = `rect(0, 100%, 100%, ${this.sliderValue}%)`;
-  }
 }

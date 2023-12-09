@@ -4,6 +4,7 @@
   background-color: aliceblue;
   justify-content: space-between;
   height: 40px;
+  line-height: 2.5em;
 
   .logo {
     display: flex;
@@ -15,9 +16,4 @@
     justify-content: space-between;
     margin-right: 20px;
   }
-}
-
-.picture {
-  height: 50px;
-  width: 50px;
 }
