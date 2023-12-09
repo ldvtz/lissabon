@@ -10,5 +10,5 @@
 </div>
 
 <div #sections>
-
+  <app-section *ngFor="let picture of picturePaths" [picturePath]="picture"></app-section>
 </div>

@@ -7,6 +7,7 @@ import {Component, ElementRef, ViewChild} from '@angular/core';
 })
 export class HeaderComponent {
   @ViewChild('sections') sections!: ElementRef;
+  public picturePaths: string[] = ["../../assets/horse_after.png"];
 
   ngOnInit() {
     this.addSmoothScrolling();
