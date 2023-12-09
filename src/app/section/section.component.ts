@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {SectionInfoDTO} from "../sectionInfoDTO";
 
 @Component({
   selector: 'app-section',
@@ -6,5 +7,5 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./section.component.scss']
 })
 export class SectionComponent {
-  @Input() picturePath?: string;
+  @Input() sectionInfo?: SectionInfoDTO;
 }

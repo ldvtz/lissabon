@@ -1,4 +1,4 @@
-<div class="section">
+<div *ngIf="!sectionInfo?.isPictureLeft" class="section">
   <div class="text">
     <div class="picture-title">
       <h2>Picture title</h2>
@@ -9,6 +9,20 @@
     </div>
   </div>
   <div class="pictureContainer">
-    <img [src]="picturePath" alt="After" class="picture" id="afterImg">
+    <img [src]="sectionInfo?.picturePath" alt="After" class="picture">
+  </div>
+</div>
+<div *ngIf="sectionInfo?.isPictureLeft" class="section">
+  <div class="pictureContainer">
+    <img [src]="sectionInfo?.picturePath" alt="After" class="picture">
+  </div>
+  <div class="text">
+    <div class="picture-title">
+      <h2>Picture title</h2>
+    </div>
+    <div class="picture-text">
+      lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+      lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+    </div>
   </div>
 </div>
