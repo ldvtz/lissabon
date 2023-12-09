@@ -25,7 +25,15 @@ export class HeaderComponent {
     section2.picturePath = "../../assets/horse_after.png";
     section2.isPictureLeft = false;
 
-    this.sectionArray = [section1, section2];
+    let section3 = new SectionInfoDTO();
+    section3.picturePath = "../../assets/horse_after.png";
+    section3.isPictureLeft = true;
+
+    let section4 = new SectionInfoDTO();
+    section4.picturePath = "../../assets/horse_after.png";
+    section4.isPictureLeft = false;
+
+    this.sectionArray = [section1, section2, section3, section4];
   }
 
   addSmoothScrolling() {
