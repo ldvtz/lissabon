@@ -1,1 +1,4 @@
 <app-header></app-header>
+<div #sections>
+  <app-section *ngFor="let sectionInfo of sectionArray" [sectionInfo]="sectionInfo"></app-section>
+</div>
