@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, EventEmitter, OnInit, Output, ViewChild} from '@angular/core';
 import {SectionInfoDTO} from "../sectionInfoDTO";
 import {SectionComponent} from "../section/section.component";
 import {DataChangeService} from "../data-change.service";
@@ -9,8 +9,15 @@ import {DataChangeService} from "../data-change.service";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
+  @Output() elementClicked = new EventEmitter<string>();
+
+
   ngOnInit() {
     this.addSmoothScrolling();
+  }
+
+  onElementClick(sectionId: string) {
+    this.elementClicked.emit(sectionId);
   }
 
   constructor(private dataChangeService: DataChangeService) {
@@ -22,6 +29,9 @@ export class HeaderComponent implements OnInit{
     // links.forEach(link => {
     //   link.addEventListener('click', (event) => this.scrollToSection(event));
     // });
-    this.dataChangeService.emitHeader(1).next();
+
+  }
+  public scrollToSection(sectionId: number): void {
+    this.dataChangeService.emitHeader().next(sectionId);
   }
 }
