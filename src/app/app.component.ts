@@ -21,6 +21,9 @@ export class AppComponent implements OnInit{
   }
 
   scrollToSection(sectionId: string) {
+    if(sectionId == "section0") {
+      window.document.body.scrollTop = 0;
+    }
     const sectionElement = this.sections.nativeElement.querySelector(`#${sectionId}`);
     if (sectionElement) {
       sectionElement.scrollIntoView({ behavior: 'smooth' });

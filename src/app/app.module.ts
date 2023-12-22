@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import {FormsModule} from "@angular/forms";
 import { SectionComponent } from './section/section.component';
+import { LissabonSectionComponent } from './lissabon-section/lissabon-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SectionComponent
+    SectionComponent,
+    LissabonSectionComponent
   ],
     imports: [
         BrowserModule,

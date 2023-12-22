@@ -1,13 +1,7 @@
 <app-header (elementClicked)="scrollToSection($event)"></app-header>
 
-<div id="section0">
-  <div class="title">
 
-  </div>
-  <div class="description">
-
-  </div>
-</div>
 <div #sections>
+  <app-lissabon-section id="section0"></app-lissabon-section>
   <app-section id="{{'section' + sectionInfo.sectionId}}" *ngFor="let sectionInfo of sectionArray" [sectionInfo]="sectionInfo"></app-section>
 </div>
