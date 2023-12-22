@@ -9,18 +9,13 @@
   </div>
   <div class="pictureContainer">
     <img *ngIf="!sectionInfo?.isVideo" [src]="sectionInfo?.picturePath" alt="Picture" class="picture">
-    <video *ngIf="sectionInfo?.isVideo" controls>
-      <source [src]="sectionInfo?.picturePath" type="video/mp4">
-    </video>
+    <iframe *ngIf="sectionInfo?.isVideo" src="https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview" width="640" height="480" allow="autoplay"></iframe>
   </div>
 </div>
 <div *ngIf="sectionInfo?.isPictureLeft" class="section">
   <div class="pictureContainer">
     <img *ngIf="!sectionInfo?.isVideo" [src]="sectionInfo?.picturePath" alt="Picture" class="picture">
-    <video *ngIf="sectionInfo?.isVideo" controls width="600">
-      <source [src]="sectionInfo?.picturePath" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <iframe *ngIf="sectionInfo?.isVideo" src="https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview" allow="autoplay"></iframe>
   </div>
   <div class="text">
     <div class="picture-title">

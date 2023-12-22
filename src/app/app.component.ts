@@ -55,7 +55,7 @@ export class AppComponent implements OnInit{
     section3.title = "Picture 3";
 
     let section4 = new SectionInfoDTO();
-    section4.picturePath = "src/assets/video_lissabon.mp4";
+    section4.picturePath = "https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview";
     section4.isPictureLeft = false;
     section4.sectionId = 4;
     section4.text = "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet "+
