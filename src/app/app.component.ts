@@ -36,34 +36,40 @@ export class AppComponent implements OnInit{
     section1.picturePath = "../../assets/horse_after.png";
     section1.isPictureLeft = true;
     section1.sectionId = 1;
-    section1.text = "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet "+
-      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet";
-    section1.title = "Picture 1";
+    section1.text = "Die Statue auf dem Praça da Figueira, einem zentralen Platz in Lissabon, Portugal, " +
+      "repräsentiert Dom João I, einen bedeutenden Monarchen des 14. Jahrhunderts. Das imposante Denkmal, " +
+      "umgeben von lebendigem Treiben und historischem Flair, dient als markanter Treffpunkt und erinnert " +
+      "an die reiche Geschichte der Stadt";
+    section1.title = "Praça da Figueira";
 
     let section2 = new SectionInfoDTO();
-    section2.picturePath = "../../assets/horse_after.png";
+    section2.picturePath = "../../assets/tramm_edited.png";
     section2.isPictureLeft = false;
     section2.sectionId = 2;
-    section2.text = "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet "+
-      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet";
-    section2.title = "Picture 2";
+    section2.text = "Die Straßenbahnen in Lissabon sind ein charakteristisches Merkmal der Stadt, insbesondere " +
+      "die gelben Trams der Linie 28, die durch malerische Viertel und enge Gassen schlängeln. Diese nostalgischen " +
+      "Transportmittel bieten nicht nur eine praktische Fortbewegungsmöglichkeit, sondern auch eine charmante " +
+      "Gelegenheit, die historische Architektur und die lebendige Atmosphäre der portugiesischen Hauptstadt zu " +
+      "erleben.";
+    section2.title = "Tram";
 
 
     let section3 = new SectionInfoDTO();
-    section3.picturePath = "../../assets/horse_after.png";
+    section3.picturePath = "../../assets/post_edit.png";
     section3.isPictureLeft = true;
     section3.sectionId = 3;
-    section3.text = "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet "+
-      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet";
-    section3.title = "Picture 3";
+    section3.text = "Der Marktplatz in Lissabon, auch bekannt als der Mercado da Ribeira oder Time Out Market, " +
+      "ist ein lebendiger Treffpunkt für kulinarische Genüsse. Hier erlebt man die Vielfalt der portugiesischen " +
+      "Küche, von frischen Meeresfrüchten bis zu köstlichen Pastéis de Nata. Die Mischung aus traditionellen Märkten " +
+      "und modernem Flair macht diesen Ort zu einem pulsierenden Zentrum für Gastronomie und lokales Lebensgefühl.";
+    section3.title = "Marktplatz";
 
     let section4 = new SectionInfoDTO();
     section4.picturePath = "https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview";
     section4.isPictureLeft = false;
     section4.sectionId = 4;
-    section4.text = "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet "+
-    "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet";
-    section4.title = "Video";
+    section4.text = "Im Video wird meine Reise nach Lissabon gezeigt!";
+    section4.title = "Reise nach Lissabon";
     section4.isVideo = true;
 
     this.sectionArray = [section1, section2, section3, section4];

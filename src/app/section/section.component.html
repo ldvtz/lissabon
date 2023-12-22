@@ -15,7 +15,7 @@
 <div *ngIf="sectionInfo?.isPictureLeft" class="section">
   <div class="pictureContainer">
     <img *ngIf="!sectionInfo?.isVideo" [src]="sectionInfo?.picturePath" alt="Picture" class="picture">
-    <iframe *ngIf="sectionInfo?.isVideo" src="https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview" allow="autoplay"></iframe>
+    <iframe class="video" *ngIf="sectionInfo?.isVideo" src="https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview" allow="autoplay"></iframe>
   </div>
   <div class="text">
     <div class="picture-title">
