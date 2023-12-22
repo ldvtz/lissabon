@@ -4,4 +4,5 @@ export class SectionInfoDTO {
   public isPictureLeft?: boolean;
   public text?: string;
   public title?: string;
+  public isVideo?: boolean = false;
 }

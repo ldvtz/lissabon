@@ -8,12 +8,19 @@
     </div>
   </div>
   <div class="pictureContainer">
-    <img [src]="sectionInfo?.picturePath" alt="After" class="picture">
+    <img *ngIf="!sectionInfo?.isVideo" [src]="sectionInfo?.picturePath" alt="Picture" class="picture">
+    <video *ngIf="sectionInfo?.isVideo" controls>
+      <source [src]="sectionInfo?.picturePath" type="video/mp4">
+    </video>
   </div>
 </div>
 <div *ngIf="sectionInfo?.isPictureLeft" class="section">
   <div class="pictureContainer">
-    <img [src]="sectionInfo?.picturePath" alt="After" class="picture">
+    <img *ngIf="!sectionInfo?.isVideo" [src]="sectionInfo?.picturePath" alt="Picture" class="picture">
+    <video *ngIf="sectionInfo?.isVideo" controls width="600">
+      <source [src]="sectionInfo?.picturePath" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
   <div class="text">
     <div class="picture-title">

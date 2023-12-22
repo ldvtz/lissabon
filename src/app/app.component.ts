@@ -55,12 +55,13 @@ export class AppComponent implements OnInit{
     section3.title = "Picture 3";
 
     let section4 = new SectionInfoDTO();
-    section4.picturePath = "../../assets/horse_after.png";
+    section4.picturePath = "src/assets/video_lissabon.mp4";
     section4.isPictureLeft = false;
     section4.sectionId = 4;
     section4.text = "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet "+
     "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet";
-    section4.title = "Picture 4";
+    section4.title = "Video";
+    section4.isVideo = true;
 
     this.sectionArray = [section1, section2, section3, section4];
   }
