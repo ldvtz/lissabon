@@ -9,10 +9,10 @@
   </div>
   <div class="pictureContainer">
     <img *ngIf="!sectionInfo?.isVideo" [src]="sectionInfo?.picturePath" alt="Picture" class="picture">
-    <iframe *ngIf="sectionInfo?.isVideo" src="https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview" width="640" height="480" allow="autoplay"></iframe>
+    <iframe class="video" *ngIf="sectionInfo?.isVideo" src="https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview" allow="autoplay"></iframe>
   </div>
 </div>
-<div *ngIf="sectionInfo?.isPictureLeft" class="section">
+<div *ngIf="sectionInfo?.isPictureLeft" class="section sectionLeft">
   <div class="pictureContainer">
     <img *ngIf="!sectionInfo?.isVideo" [src]="sectionInfo?.picturePath" alt="Picture" class="picture">
     <iframe class="video" *ngIf="sectionInfo?.isVideo" src="https://drive.google.com/file/d/1CIh70AtEN1II0GY8iBud-cKoIPzfMSDp/preview" allow="autoplay"></iframe>

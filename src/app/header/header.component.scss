@@ -20,14 +20,36 @@
   }
 
   .navigation {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    margin-right: 1%;
-    padding-right: 1%;
+    margin-right: 3%;
 
     div a {
       text-decoration: none;
+    }
+  }
+}
+
+.small-nav {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: none !important;
+  }
+
+  .small-nav {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-right: 4%;
+
+    div a img {
+      height: 20px;
+      width: 20px;
     }
   }
 }
